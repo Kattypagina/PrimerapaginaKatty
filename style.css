@@ -1,0 +1,241 @@
+body {
+    background-color: rgb(194, 255, 255);
+    margin: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+
+}
+
+main, form, button {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+
+
+h1 {
+    color: rgb(21, 91, 91);
+    font-family: sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(21, 91, 91);
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.nombre p {
+    color: rgb(12, 42, 42);
+    font-size: 27px;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+p {
+    color: rgb(12, 42, 42);
+    font-size: 20px;
+    text-align: center;
+    font-family: arial;
+
+}
+
+
+
+section {
+
+    flex: 1;
+    padding: 10px;
+    border: 2px solid rgb(12, 63, 63);
+    border-radius: 4%;
+    margin: 3px;
+    background-color: rgba(255, 255, 255, 0.29);
+    align-items: center;
+
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+/* MENU DE NAVEGACION */
+
+.container-nav {
+    display: flex;
+    padding: 20px;
+    height: 50px;
+    background-color: rgb(222, 62, 174);
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+
+}
+
+
+li>a {
+    padding: 8px 24px;
+
+}
+
+
+li {
+    list-style-type: none;
+
+}
+
+
+a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.button-menu-toggle {
+    display: none;
+}
+
+main li{
+  
+    display: flex;
+    flex-direction: column;
+    color: rgb(12, 42, 42);
+    font-size: 20px;
+    text-align: center;
+    font-family: arial;
+    text-decoration:underline crimson;
+    
+
+
+}
+
+
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Centra horizontalmente la imagen */
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+
+/* MENU ADAPTABLE ACA */
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(21, 69, 69, 0.95);
+        width: 100%;
+        height: 80%;
+        top: 50px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        gap: 60px;
+        font-size: 40px;
+
+
+    }
+
+    .img-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+    }
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    margin: 100px 0px 0px 0px;
+
+    min-height: 200px;
+    background-color: grey;
+text-align: center;
+}
+
+footer p {
+
+    color: wheat;
+
+}
